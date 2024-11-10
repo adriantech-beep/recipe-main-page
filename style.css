@@ -1,0 +1,157 @@
+:root {
+  --primary-light-color: hsl(0, 0%, 100%);
+  --secondary-light-color: hsl(30, 54%, 90%);
+  --tertiary-light-color: hsl(330, 100%, 98%);
+
+  --dark-primary-color: hsl(14, 45%, 36%);
+  --dark-secondary-color: hsl(30, 10%, 34%);
+  --dark-tertiary-color: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--secondary-light-color);
+}
+main {
+  width: 100%;
+  max-width: 650px;
+  background-color: var(--primary-light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 1em 2em 1em;
+  padding: 2em;
+  border-radius: 10px;
+}
+main img {
+  width: 100%;
+  border-radius: 10px;
+}
+main p {
+  color: var(--dark-tertiary-color);
+}
+main h1 {
+  color: var(--dark-tertiary-color);
+  font-weight: 500;
+  font-family: "Young serif", sans-serif;
+  margin: 25px 0em;
+  font-size: 2.2em;
+}
+.prepTime-title h1 {
+  color: var(--dark-primary-color);
+}
+.prep-time ul,
+li,
+b {
+  color: var(--dark-secondary-color);
+}
+.wrap p {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+}
+.prepTime {
+  width: 100%;
+  max-width: 610px;
+  padding: 1.2em;
+  margin-top: 2em;
+  background-color: var(--tertiary-light-color);
+  border-radius: 10px;
+}
+.prepTime ul {
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+.prepTime ul li {
+  margin-bottom: 7px;
+  font-family: "Outfit", sans-serif;
+}
+.prepTime ul b {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 15px;
+}
+.prepTime-title h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+.ingredients-list {
+  width: 100%;
+  max-width: 610px;
+  padding: 1.2em;
+}
+.ingredients-list li {
+  margin-bottom: 2em;
+}
+.instruction-list {
+  margin-bottom: 1em;
+}
+.instruction-list li {
+  margin: 1em 1.5em 1em;
+  font-weight: 600;
+  color: var(--dark-primary-color);
+  font-family: "Outfit", sans-serif;
+}
+.instruction-list li p {
+  font-weight: 400;
+}
+.instruction-list li b {
+  color: var(--dark-secondary-color);
+}
+.wrap h2 {
+  font-family: "Young serif", sans-serif;
+  flex-direction: flex-end;
+  color: var(--dark-primary-color);
+}
+.ingredients-list li {
+  margin-bottom: 5px;
+  font-family: "Outfit", sans-serif;
+  color: var(--dark-secondary-color);
+}
+.nutrition-table p {
+  margin-top: 1em;
+  color: var(--dark-secondary-color);
+  font-weight: 500;
+}
+.tables {
+  margin: 10px;
+  margin-left: 3%;
+}
+.calories-amount {
+  margin-left: 55%;
+  font-weight: 700;
+  color: var(--dark-primary-color);
+}
+.carbs-amount {
+  margin-left: 58%;
+  font-weight: 700;
+  color: var(--dark-primary-color);
+}
+.protein-amount {
+  margin-left: 56%;
+  font-weight: 700;
+  color: var(--dark-primary-color);
+}
+.fat-amount {
+  margin-left: 61%;
+  font-weight: 700;
+  color: var(--dark-primary-color);
+}
+@media (max-width: 430px) {
+  main h1 {
+    display: inline;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 5em;
+  }
+}
